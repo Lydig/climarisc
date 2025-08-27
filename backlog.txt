@@ -10,6 +10,7 @@ Interative map of all the yields, periods, crop coverage, time, change
 
 Summary statistics like highest yield country per crop etc.
 
+Crops compared to each other - which are more popular, more yielding, change comapred to each other, are some becoming more/less yielding/grown, more or less affected
 
 
 1. get more data (stressors etc.)
