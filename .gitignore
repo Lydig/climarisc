@@ -1,6 +1,9 @@
 # Data files - IMPORTANT: we do not track large data files
 data/
 
+# Personal files
+personal/
+
 # Python
 __pycache__/
 *.pyc
