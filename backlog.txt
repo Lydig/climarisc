@@ -1,0 +1,19 @@
+Interactive map
+
+Grey areas instead of outlines for the map / Less weight on the outlines
+
+Country hover tooltip
+
+Map zoom, country zoom
+
+Interative map of all the yields, periods, crop coverage, time, change
+
+Summary statistics like highest yield country per crop etc.
+
+
+
+1. get more data (stressors etc.)
+
+2. interactive visualization
+
+3. vulnerability curves
