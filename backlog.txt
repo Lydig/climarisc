@@ -14,7 +14,30 @@ Crops compared to each other - which are more popular, more yielding, change com
 
 
 1. get more data (stressors etc.)
+    management might be difficult
+    soil grid database - soil gis data
+    climate - important
+    nasa power - api - free time series - not super great client - used for predicting solar energy potential
+    solar irradiation
+    crop simulation model for python - pretty nice interface - pulls in from nasa power - good palce to start
+    evapotranspiratin - important - Penman-Monteith equation
+    precipitation - important
+    porosity soil
+    organic content of soil
+    soil moisture = precipitation - evapotranspiration
+    wilting point - soil moisture at which the plant cant extract
+    field capacity - sponge capacity
+    surface net solar radiation
+    if we match the ERA up with our dataset we have the climatic components
 
 2. interactive visualization
+    bokeh
+    shiny
+    streamlit.io
+    d3
+    tablo
 
 3. vulnerability curves
+
+4. scatterplot matrix
+    plot all the variables vs all the variables
