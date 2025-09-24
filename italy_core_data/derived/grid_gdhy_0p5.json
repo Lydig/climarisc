@@ -1,0 +1,14 @@
+{
+  "source": "GDHY maize",
+  "file_used": "C:\\Users\\esthe\\Documents\\programming\\climarisc\\data\\maize\\yield_1982.nc4",
+  "lat_len": 360,
+  "lon_len": 720,
+  "lat_min": -89.75,
+  "lat_max": 89.75,
+  "lon_min": 0.25,
+  "lon_max": 359.75,
+  "step_lat": 0.5,
+  "step_lon": 0.5,
+  "offset_lat": 0.25,
+  "offset_lon": 0.25
+}
