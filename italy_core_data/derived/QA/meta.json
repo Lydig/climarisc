@@ -1,0 +1,109 @@
+{
+  "dataset_name": "maize_ITnorth_core42_1982_2016_allstressors_with_monthly.csv",
+  "generated_at": "2025-09-27 16:46:20",
+  "rows": 1470,
+  "columns": 34,
+  "keys": [
+    "lat",
+    "lon",
+    "year"
+  ],
+  "panel": {
+    "cells": 42,
+    "years": 35,
+    "balanced": true
+  },
+  "region": {
+    "bbox": {
+      "lat_min": 43.75,
+      "lat_max": 46.75,
+      "lon_min": 6.75,
+      "lon_max": 12.25
+    },
+    "note": "Northern Italy (Po Valley); 42-core cells via geographic box \u2229 4-crop overlap; 1981 excluded."
+  },
+  "grid": {
+    "resolution_deg": 0.5,
+    "center_offset_deg": 0.25,
+    "lon_convention": "0\u2013360",
+    "source": "GDHY maize grid"
+  },
+  "period": {
+    "start_year": 1982,
+    "end_year": 2016,
+    "season": "MJJAS (May\u2013September)"
+  },
+  "variables": {
+    "yield_maize": {
+      "unit": "t/ha",
+      "type": "state",
+      "aggregation": "annual"
+    },
+    "temperature": {
+      "unit": "\u00b0C",
+      "type": "state",
+      "aggregation": "MJJAS mean"
+    },
+    "precipitation": {
+      "unit": "mm",
+      "type": "flux",
+      "aggregation": "MJJAS total (daily mean \u00d7 days per month)"
+    },
+    "soil_water": {
+      "unit": "m\u00b3/m\u00b3",
+      "type": "state",
+      "aggregation": "MJJAS mean"
+    },
+    "solar_radiation": {
+      "unit": "J/m\u00b2",
+      "type": "flux",
+      "aggregation": "MJJAS total (daily mean \u00d7 days per month)"
+    },
+    "potential_evaporation": {
+      "unit": "mm",
+      "type": "flux",
+      "aggregation": "MJJAS total (daily mean \u00d7 days per month; sign flipped to +)"
+    },
+    "monthly_columns": {
+      "months": [
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "temperature_*": {
+        "unit": "\u00b0C",
+        "aggregation": "monthly mean"
+      },
+      "precipitation_*": {
+        "unit": "mm",
+        "aggregation": "monthly total (daily mean \u00d7 days per month)"
+      },
+      "soil_water_*": {
+        "unit": "m\u00b3/m\u00b3",
+        "aggregation": "monthly mean"
+      },
+      "solar_radiation_*": {
+        "unit": "J/m\u00b2",
+        "aggregation": "monthly total (daily mean \u00d7 days per month)"
+      },
+      "potential_evaporation_*": {
+        "unit": "mm",
+        "aggregation": "monthly total (daily mean \u00d7 days per month; sign flipped to +)"
+      }
+    }
+  },
+  "processing": {
+    "era5_monthly_product": "Monthly averaged (daily means for fluxes)",
+    "spatial_downsampling": "Block average 0.1\u00b0 \u2192 0.5\u00b0 to GDHY centers (0.25\u00b0 offset)",
+    "temporal_aggregation": "MJJAS per rules above",
+    "subset": "Exact 42 cells selected by value (nearest to centers); global crop to bbox before processing",
+    "exclusions": "Year 1981 excluded; cells with incomplete years removed"
+  },
+  "inputs": {
+    "seasonal_base_csv": "C:\\Users\\esthe\\Documents\\programming\\climarisc\\italy_core_data\\derived\\maize_ITnorth_core42_1982_2016_allstressors.csv",
+    "enriched_with_monthly_csv": "C:\\Users\\esthe\\Documents\\programming\\climarisc\\italy_core_data\\derived\\maize_ITnorth_core42_1982_2016_allstressors_with_monthly.csv",
+    "mask_core_42_csv": "C:\\Users\\esthe\\Documents\\programming\\climarisc\\italy_core_data\\derived\\mask_core_42_on_gdhy.csv"
+  }
+}
