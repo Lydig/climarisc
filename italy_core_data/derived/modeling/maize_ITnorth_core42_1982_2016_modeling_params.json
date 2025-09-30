@@ -1,0 +1,37 @@
+{
+  "input_file": "..\\italy_core_data\\derived\\maize_ITnorth_core42_1982_2016_allstressors_with_monthly.csv",
+  "yield_col": "yield_maize",
+  "n_rows": 1470,
+  "n_cells": 42,
+  "years": {
+    "min": 1982,
+    "max": 2016
+  },
+  "has_wheat_type": false,
+  "standardization": {
+    "temperature": {
+      "mean": 17.508786341632653,
+      "std": 3.893031088960472
+    },
+    "precipitation": {
+      "mean": 532.8941863242562,
+      "std": 218.74881403718777
+    },
+    "soil_water": {
+      "mean": 0.32259115129931976,
+      "std": 0.04811791774024214
+    },
+    "solar_radiation": {
+      "mean": 2505406941.832653,
+      "std": 142329253.4942625
+    },
+    "potential_evaporation": {
+      "mean": 1030.2486500861694,
+      "std": 188.19955044042908
+    },
+    "aridity_index": {
+      "mean": 0.5414698570550648,
+      "std": 0.25799061881500357
+    }
+  }
+}
